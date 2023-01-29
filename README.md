@@ -99,7 +99,7 @@ tail komennolla saamme vain lokin loppuosan ja -2 rajoittaa tuloksen kahteen vii
     127.0.02 - - [29/Jan/2023: 17:29:31 +0200] "GET /etsitaa/404 HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv: 102.0) Gecko/20100101 Firefox/102.0
     127.0.02 - - [29/Jan/2023: 17:29:32 +0200] "GET / HTTP/1.1" 200 3379 "-" "Mozilla/5.0 (X11; Linux x86_64; rv: 102.0) Gecko/20100101 Firefox/102.0
 
-Kuten jo aikaisemmin katsoimme login alussa on IP osoite, joka tässä tapauksessa vastaa paikallista sijainti eli localhost. Seuraavana tulee pvm, aika ja aikavyöhyke kenttä. Http pyynnön metodi näkyy GET osioss ja seuraavana on haettu endpoint/url. Tämän jälkeen näkyy metodin status koodi, mikä näissä lokeissa on selkeästi erilainen, koska toinen pyyntö on epäonnistunut 404 ja toinen on 200 ok. Statuksen jälkeen on palautettujen tavujen määrä. Lokin lopussa on Firefox user agent string reference, jossa eritellään selaimen: Mozilla yhteensopivuus, ohjelmiston alusta, gecko-selain moottorin versionumero, gecko numerosarja, käytetyn selaimen nimi ja versionumero. 
+Kuten jo aikaisemmin katsoimme login alussa on IP osoite, joka tässä tapauksessa vastaa paikallista sijaintia siis localhost. Seuraavana tulee pvm, aika ja aikavyöhyke kenttä. Http pyynnön metodi näkyy GET osioss ja seuraavana on haettu endpoint/url. Tämän jälkeen näkyy metodin status koodi, mikä näissä lokeissa on selkeästi erilainen, koska toinen pyyntö on epäonnistunut 404 ja toinen on 200 ok. Statuksen jälkeen on palautettujen tavujen määrä. Lokin lopussa on Firefox user agent string reference, jossa eritellään selaimen: Mozilla yhteensopivuus, ohjelmiston alusta, gecko-selain moottorin versionumero, gecko numerosarja, käytetyn selaimen nimi ja versionumero. 
 
 
 ## Lähteet
