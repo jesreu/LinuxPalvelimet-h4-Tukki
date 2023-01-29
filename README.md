@@ -92,4 +92,5 @@ Vasemmalta näkee tarkan päivämäärä, kellonaika ja vuoden. Seuraavana on Ap
     https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent/Firefox
     https://httpd.apache.org/docs/2.4/mod/core.html#loglevel
     https://serverfault.com/questions/607873/apache-is-ok-but-what-is-this-in-error-log-mpm-preforknotice
+    https://www.dataset.com/blog/apache-error-log-detail/
 
