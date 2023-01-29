@@ -80,7 +80,26 @@ Kuvassa näkyy alimpana:
 Vasemmalta näkee tarkan päivämäärä, kellonaika ja vuoden. Seuraavana on Apachen ilmoituksen taso, tässä tapauksessa notice, joka on normaalia toimintaa. PID vastaa prosessin id:tä ja tid on säie id (eng: thread id). En osaa tarkalleen sanoa mitä AH00094 tekee, mutta kokonaisuudessaan Command line: '/usr/sbin/apache2' on säikeen aloittamista varten oleva komento usr/sbin/apache2 sijaintina.
 
 ## b)
+Aiheutetaan lokiin tietoa käyttämällä apache2 palvelinta paikallisesti. Mikäli sinulla ei ole Apache2 palvelinta voit asentaa ja käynnistää sen komennoilla.
 
+    sudo apt-get update
+    sudo apt install apache2
+    sudo systemctl start apache2
+    
+Palvelimen olessa onnistuneesti käynnistä voimme vierailla sivulla localhost ja localhost/etsitaa/404. Vierailemalla näillä sivuilla voimme aiheuttaa loki tapahtumia /var/log/apache2/access.log tiedostoon. Voimme tarkastella tiedostoa tarkemmin komennolla.
+
+    sudo tail -2 apache2/access.log
+
+tail komennolla saamme vain lokin loppuosan ja -2 rajoittaa tuloksen kahteen viimeiseen riviin.
+
+![logitehty](https://user-images.githubusercontent.com/112503770/215338718-e0ff46b0-7e81-4d02-8dcf-e13e171f59a6.png)
+
+
+
+    127.0.02 - - [29/Jan/2023: 17:29:31 +0200] "GET /etsitaa/404 HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv: 102.0) Gecko/20100101 Firefox/102.0
+    127.0.02 - - [29/Jan/2023: 17:29:32 +0200] "GET / HTTP/1.1" 200 3379 "-" "Mozilla/5.0 (X11; Linux x86_64; rv: 102.0) Gecko/20100101 Firefox/102.0
+
+Kuten jo aikaisemmin katsoimme login alussa on IP osoite, joka tässä tapauksessa vastaa paikallista sijainti eli localhost. Seuraavana tulee pvm, aika ja aikavyöhyke kenttä. Http pyynnön metodi näkyy GET osioss ja seuraavana on haettu endpoint/url. Tämän jälkeen näkyy metodin status koodi, mikä näissä lokeissa on selkeästi erilainen, koska toinen pyyntö on epäonnistunut 404 ja toinen on 200 ok. Statuksen jälkeen on palautettujen tavujen määrä. Lokin lopussa on Firefox user agent string reference, jossa eritellään selaimen: Mozilla yhteensopivuus, ohjelmiston alusta, gecko-selain moottorin versionumero, gecko numerosarja, käytetyn selaimen nimi ja versionumero. 
 
 
 ## Lähteet
