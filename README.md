@@ -14,10 +14,10 @@ Luin Ars Technica artikkelin Linuxin komentorivistä, miten käyttää eri teksi
 - `|` merkillä voidaan putkittaa komennon tuloste seuraavalle komennolle
 - Artikkelissa esitellään komennot: grep, sed ja awk.
 - grep komennolla voit poimia rivejä tekstistä haluamallasi hakutermillä.
-- Komento `sudo netstat -anp | grep apache` Näyttää kaikki avoimena olevat portit, mutta tulokset on rajoitettu vain riveihin joissa on apache. (Netstat vaatii erilisen paketin toimiakseen)
+- Komento `sudo netstat -anp | grep apache` Näyttää kaikki avoimena olevat portit, mutta tulokset on rajoitettu vain riveihin joissa on apache. (Netstat vaatii erillisen paketin toimiakseen)
 - sed komento korvaa tietyn tekstin haluamallasi tekstillä. 
 - Komento `sed 's/koira/kissa/'` vaihtaa tekstin ensimmäisen koiran kissaksi.
-- awk komento, joka tarjoaa AWK-scripti kielen tekstinhallintaa varten. Huomattavasti monimutkaisempi, kuin grep ja sed. (Awk vaatii erilisen paketin toimiakseen)
+- awk komento, joka tarjoaa AWK-scripti kielen tekstinhallintaa varten. Huomattavasti monimutkaisempi, kuin grep ja sed. (Awk vaatii erillisen paketin toimiakseen)
 - Artikkelissa oli vain yksi kommentti, joka iloitsi komentorivityökalujen esittelyä nuoremmille sukupolville. 
 
 ## a)
