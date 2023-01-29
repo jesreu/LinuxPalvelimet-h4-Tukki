@@ -6,7 +6,7 @@
 ## x)
 Luin Ars Technica artikkelin Linuxin komentorivistä ja miten käyttää eri teksinhallinta komentoja.
 
-- Artikkeli listaa eri putkituksen menetelmät:
+- Artikkeli listaa eri putkituksen menetelmät: `; > >> < |`
 - Artikkelissa esitellään komennot: grep, sed ja awk.
 - grep komennolla voit poimia rivejä tekstistä haluamallasi hakutermillä.
 - Komento `sudo netstat -anp | grep apache` Näyttää kaikki avoimena olevat portit, mutta tulokset on rajoitettu vain riveihin joissa on apache.
