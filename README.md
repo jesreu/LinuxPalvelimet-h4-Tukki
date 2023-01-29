@@ -21,7 +21,33 @@ Luin Ars Technica artikkelin Linuxin komentorivistä, miten käyttää eri teksi
 - Artikkelissa oli vain yksi kommentti, joka iloitsi komentorivityökalujen esittelyä nuoremmille sukupolville. 
 
 ## a)
+Tässä osiossa analysoin logitiedostojen tietoja.
 
+### /var/log/syslog
+Yleisloki, mikäli tiedolla ei ole omaa logia.
+
+    sudo less syslog | grep Finished
+    
+Putkitin lisäksi grep komennon, jolla voin hieman rajoittaa tulosteen kokoa. 
+
+
+
+Kuvassa näkyy alimpana:
+
+    Jan 29 15:19:52 Kissa systemd[1]: Finished Cleanup of Temporary Directories.
+    
+Vasemmalta lukien lokissa on kuukausi, päivä, kellonaika, järjestelmän nimi, järjestelmänhallinta järjestelmä ja lokin kuvaus. Loki tieto on tässä tapauksessa varsin yksiselitteinen ja se kertoo väliaikaisten tietojen tyhjentämisestä.
+
+### /var/log/auth.log
+Kirjautumistiedot ja sudo komennon käyttö
+
+### /var/log/apache2/access.log
+Apachen alaisuudessa olevat netin surffailu tiedot
+
+### /var/log/apache2/error.log
+Apachen virhetilanteet
+
+## b)
 
 
 
