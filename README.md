@@ -4,7 +4,7 @@
     Linkki:       https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/
 
 ## x)
-Luin Ars Technica artikkelin Linuxin komentorivistä ja miten käyttää eri teksinhallinta komentoja.
+Luin Ars Technica artikkelin Linuxin komentorivistä, miten käyttää eri teksinhallinta komentoja.
 
 - Artikkeli listaa putkittamisen eri muotoja: `; > >> < |`
 - `;` kahden eri komennon välissä suorittaa komennot peräkkäin.
@@ -17,7 +17,7 @@ Luin Ars Technica artikkelin Linuxin komentorivistä ja miten käyttää eri tek
 - Komento `sudo netstat -anp | grep apache` Näyttää kaikki avoimena olevat portit, mutta tulokset on rajoitettu vain riveihin joissa on apache.
 - sed komento korvaa tietyn tekstin haluamallasi tekstillä. 
 - Komento `sed 's/koira/kissa/'` vaihtaa tekstin ensimmäisen koiran kissaksi.
-- awk komento, joka tarjoaa AWK-scripti kielen tekstinkäsittelyä varten. Huomattavasti monimutkaisempi, kuin grep ja sed.
+- awk komento, joka tarjoaa AWK-scripti kielen tekstinhallintaa varten. Huomattavasti monimutkaisempi, kuin grep ja sed.
 - Artikkelissa oli vain yksi kommentti, joka iloitsi komentorivityökalujen esittelyä nuoremmille sukupolville. 
 
 ## a)
